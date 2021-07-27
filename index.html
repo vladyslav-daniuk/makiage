@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://kit.fontawesome.com/0d3b8ce5b0.js" crossorigin="anonymous"></script>
+    <title>Test IL Makiage</title>
+</head>
+<body>
+     <div class="wrapper">
+         <div class="container">
+             <div class="logo">
+                 <img src="./img/google-logo.png" alt="">
+             </div>
+             <div class="logo2 hide">
+                <h1>Il Makiage</h1>
+             </div>
+             <div class="search">
+                 <input type="search">
+             </div>
+             <div class="buttons">
+                 <button>Пошук Google</button>
+                  <button class="swap" onclick="">Мені пощастить</button>
+             </div>
+         </div>
+     </div>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+     <script>
+
+  let btn = document.querySelector('.swap');
+  btn.onclick = function(e) {
+    let element = document.querySelector(".logo2");
+    if(element.classList.contains("show")) {
+      element.classList.remove("show");
+    } else {
+      element.classList.add("show");
+    }
+  }
+  $('.swap').click(function(){
+    $(".logo").toggleClass("hide");
+  });
+     </script>
+</body>
+</html>

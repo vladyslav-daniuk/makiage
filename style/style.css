@@ -1,0 +1,46 @@
+html, body{
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+.wrapper{
+    text-align: center;
+}
+.logo{
+    text-align: center;
+}
+h1{
+    font-size: 80px;
+    margin: 100px 0;
+    color: green;
+}
+img{
+    width: 50%;
+}
+input{
+    width: 560px;
+    height: 44px;
+    border-radius: 30px;
+    border: 1px solid gray;
+    padding: 0 80px 0 40px;
+    background: 
+    url('../img/search.png') no-repeat 1% 5px, 
+    url('../img/micro.png') no-repeat 98% 10px,
+    url('../img/keyboard.png') no-repeat 92% 6px
+}
+button{
+    margin: 40px 20px 0;
+    padding: 10px 20px;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+@media screen and (max-width: 768px){
+    input{
+        width: 100%;
+    }
+}
